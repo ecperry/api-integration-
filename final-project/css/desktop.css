@@ -1,0 +1,250 @@
+h1 {
+  font-size: 30pt;
+  font-family: 'Quicksand' sans-serif;
+}
+
+#frame {
+  height: 100%;
+  width:100%;
+  padding: 1% 5% 5% 5%;
+}
+
+#results {
+margin: 1% 1% 1% 1%;
+text-align: center;
+
+}
+.navbar-default {
+  color:black;
+  background-color:white;
+  border: none;
+  padding-top: 2%;
+}
+
+
+.navbar-brand {
+  font-size: 20pt;
+  font-family: 'Quicksand' sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.mobile{
+  font-size: 80%;
+  font-family: 'Quicksand' sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+
+.navbar-fixed-bottom {
+padding: 0 0 0 0;
+margin: 0 0 0 0;
+}
+.front {
+  font-size: 300%;
+  font-family: 'Quicksand' sans-serif;
+  color: black;
+  font-weight: bold;
+  padding: 20% 20% 20% 20%;
+  text-align: center;
+
+}
+
+h3 {
+  font-family: 'Quicksand' sans-serif;
+}
+.hidden-sm-down {
+  width: 100%;
+}
+
+.front p {
+  font-size: 15pt;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+font-style: italic;
+  text-align: center;
+
+}
+
+.link {
+  text-align: right;
+  font-size: 50%;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  text-align: center;
+
+}
+#bs-example-navbar-collapse-1{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20pt;
+
+}
+
+.twitter-tweet {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12pt;
+}
+
+
+.where{
+  font-family: 'Quicksand', sans-serif;
+font-size: 12pt;
+}
+.screen-name{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12pt;
+  color: grey;
+}
+
+.name{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+}
+.image {
+  width: 240px;
+  height:auto;
+}
+
+.twitter {
+ height: 450px;
+ width: 500px;
+ align: center;
+ margin: 5% 20% 5% 30%;
+ border: none;
+ border-top: 5px;
+ border-color: red;
+
+}
+
+iframe
+{
+  margin-right: 10%;
+  margin-left: 20%;
+  max-width: screen-width;
+  overflow: hidden;
+  height: 400px;
+  border:none;
+  text-align: center;
+}
+ a:hover {
+  color: red;
+  background-color: white;
+  text-decoration: none;
+}
+
+a:active {
+ color: red;
+ background-color: white;
+ text-decoration: none;
+}
+///////
+
+
+/* navbar */
+.nav .navbar-nav .navbar-right:active
+.nav .navbar-nav .navbar-right:hover    {
+    background-color:white;
+    border-color: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: black;
+    font-size: 20pt;
+    font-weight: bold;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16pt;
+        text-align: center;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: red;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16pt;
+        text-align: center;
+
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: red;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16pt;
+        text-align: center;
+
+
+
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: black;
+    background-color: lightgrey;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16pt;
+    margin-left: 30px;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: none;
+    border-bottom-color: none;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: none;
+    border-bottom-color: none;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: none;
+    border-bottom-color: none;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16pt;
+        text-align: center;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: black;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16pt;
+            text-align: center;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: black;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16pt;
+            text-align: center;
+    }
+}
+//

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Directly accessing Street View data</title>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+    <div class="col-lg-6 col-sm-6">
+    <div id="map" style="width: 50%; height: 100%;float:left">
+    </div>
+  </div>
+  <div class="col-lg-6 col-sm-6">
+    <div id="pano" style="width: 50%; height: 100%;"></div>
+  </div>
+</div>
+
+    <script>
+      /*
+       * Click the map to set a new location for the Street View camera.
+       */
+
+      var map;
+      var panorama;
+
+      function initMap() {
+        var berkeley = {lat: 45.43412659327395, lng: 12.32698742411617};
+        var location2 = {lat: 45.42844607957628, lng: 12.35792939912807};
+        var location3 = {lat: 45.42844607957628, lng: 12.35792939912807};
+        var location4 = {lat: 45.4357087, lng: 12.3560396};
+        var location5 = {lat: 45.4334667, lng: 12.3505046} ;
+        var location6 =  {lat: 45.4337967, lng: 12.3500867};
+        var location7 = {lat: 45.405686, lng: 12.3680141};
+        var location8 = {lat: 45.4693314, lng: 12.2552426};
+
+        var sv = new google.maps.StreetViewService();
+
+        panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
+
+        // Set up the map.
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 45.436141, lng: 12.337742},
+          zoom: 14,
+          streetViewControl: false
+        });
+
+        var marker1= new google.maps.Marker({
+          position: {lat: 45.43412659327395, lng: 12.32698742411617},
+          map: map,
+
+          title: 'Bank'
+        });
+
+        var marker2= new google.maps.Marker({
+          position: {lat: 45.42844607957628, lng: 12.35792939912807},
+          map: map,
+        });
+
+        var marker3= new google.maps.Marker({
+          position: {lat: 45.42844607957628, lng: 12.35792939912807},
+          map: map,
+        });
+
+        var marker4= new google.maps.Marker({
+          position: {lat: 45.4357087, lng: 12.3560396},
+          map: map,
+        });
+
+        var marker5= new google.maps.Marker({
+          position: {lat: 45.4334667, lng: 12.3505046},
+          map: map,
+        });
+
+        var marker6= new google.maps.Marker({
+          position: {lat: 45.4337967, lng: 12.3500867},
+          map: map,
+        });
+
+        var marker7= new google.maps.Marker({
+          position: {lat: 45.405686, lng: 12.3680141},
+          map: map,
+        });
+
+        var marker8= new google.maps.Marker({
+          position: {lat: 45.4693314, lng: 12.2552426},
+          map: map,
+        });
+
+
+
+        // Set the initial Street View camera to the center of the map
+        sv.getPanorama({location: berkeley, radius: 50}, processSVData);
+        sv.getPanorama({location: location2, radius: 50}, processSVData);
+        sv.getPanorama({location: location3, radius: 50}, processSVData);
+        sv.getPanorama({location: location4, radius: 50}, processSVData);
+        sv.getPanorama({location: location5, radius: 50}, processSVData);
+        sv.getPanorama({location: location6, radius: 50}, processSVData);
+        sv.getPanorama({location: location7, radius: 50}, processSVData);
+        sv.getPanorama({location: location8, radius: 50}, processSVData);
+
+
+        // Look for a nearby Street View panorama when the map is clicked.
+        // getPanoramaByLocation will return the nearest pano when the
+        // given radius is 50 meters or less.
+      //  map.addListener('click', function(event) {
+      //  sv.getPanorama({location: event.latLng, radius: 50}, processSVData);
+      //  });
+      }
+
+      function processSVData(data, status) {
+        if (status === google.maps.StreetViewStatus.OK) {
+          var marker = new google.maps.Marker({
+            position: data.location.latLng,
+            map: map,
+            title: 'Ca Giustinian'
+          });
+
+          panorama.setPano(data.location.pano);
+          panorama.setPov({
+            heading: 270,
+            pitch: 0
+          });
+          panorama.setVisible(true);
+
+          marker.addListener('click', function() {
+            var markerPanoID = data.location.pano;
+            // Set the Pano to use the passed panoID.
+            panorama.setPano(markerPanoID);
+            panorama.setPov({
+              heading: 270,
+              pitch: 0
+            });
+            panorama.setVisible(true);
+          });
+        } else {
+          console.error('Street View data not found for this location.');
+        }
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsNwWPBwsDvTuk6BDiKqtrhbixj8GCleI&callback=initMap">
+    </script>
+  </body>
+</html>

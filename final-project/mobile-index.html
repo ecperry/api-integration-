@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="css/desktop.css" rel="stylesheet">
+          <link href="css/desktop.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header mobile">
+      <a class="navbar-brand" href="index.html"><p class="mobile"> VENICE BIENNALE <img src="photos/biennale.jpeg" size="10%"></p></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+      <ul class="nav navbar-nav navbar-fixed-bottom">
+        <li class="active"><a href="#"> venues</a></li>
+        <li><a href="scratch-html/social-feeds.html">photos</a></li>
+        <li><a href="scratch-html/twitter.html">tweets</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+<!-- /.container-fluid -->
+  </nav>
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      height: 100%;
+    }
+  </style>
+
+<div id="frame">
+    <div id="map" style="width: 100%; height: 70%;float:left"></div>
+
+</div>
+    <script>
+      /*
+       * Click the map to set a new location for the Street View camera.
+       */
+
+      var map;
+      var panorama;
+
+      function initMap() {
+        var berkeley = {lat: 45.43412659327395, lng: 12.32698742411617};
+        var location2 = {lat: 45.42853683121339, lng: 12.35789548715513};
+        var location3 = {lat: 45.42844607957628, lng: 12.35792939912807};
+        var location4 = {lat: 45.4357087, lng: 12.3560396};
+        var location5 = {lat: 45.4334667, lng: 12.3505046} ;
+        var location6 =  {lat: 45.4337967, lng: 12.3500867};
+        var location7 = {lat: 45.405686, lng: 12.3680141};
+        var location8 = {lat: 45.4693314, lng: 12.2552426};
+
+
+        var contentString = '<div id="content">'+
+                    '<div id="siteNotice">'+
+                    '</div>'+
+                    '<h1 id="firstHeading" class="firstHeading">Asac - Historical Archives of Contemporary Arts</h1>'+
+                    '<div id="bodyContent">'+
+                    '<p><b></b>, read more about the current exhibits at Asac'+
+                    '<p>here<a href="http://www.labiennale.org/en/biennale/venues/vega.html?back=true"</p>'+
+                    '</div>'+
+                    '</div>';
+
+        var contentString2 = '<div id="content">'+
+                                '<div id="siteNotice">'+
+                                '</div>'+
+                                '<h1 id="firstHeading" class="firstHeading">Ca Giustinian</h1>'+
+                                '<div id="bodyContent">'+
+                                '<p><b></b>, this is number 2 <p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                '(last visited June 22, 2009).</p>'+
+                                '</div>'+
+                                '</div>';
+
+
+              var contentString3 = '<div id="content">'+
+                                                        '<div id="siteNotice">'+
+                                                        '</div>'+
+                                                        '<h1 id="firstHeading" class="firstHeading">Teatro Piccolo Arsenale</h1>'+
+                                                        '<div id="bodyContent">'+
+                                                        '<p><b>Uluru</b>, this is number 3 <b>Ayers Rock</b>, is a large <p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                                        'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                                        '(last visited June 22, 2009).</p>'+
+                                                        '</div>'+
+                                                        '</div>';
+
+                                                        var contentString4 = '<div id="content">'+
+                                                                                '<div id="siteNotice">'+
+                                                                                '</div>'+
+                                                                                '<h1 id="firstHeading" class="firstHeading">Arsenale</h1>'+
+                                                                                '<div id="bodyContent">'+
+                                                                                '<p><b>Uluru</b>, This is number 4 <b>Ayers Rock</b>, is a large ' +
+                                                                                'sandstone rock formation in the southern part of the '+
+                                                                                'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+                                                                                'south west of the nearest large town, Alice Springs; 450&#160;km '+
+                                                                                '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+                                                                                'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+                                                                                'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+                                                                                'Aboriginal people of the area. It has many springs, waterholes, '+
+                                                                                'rock caves and ancient paintings. Uluru is listed as a World '+
+                                                                                'Heritage Site.</p>'+
+                                                                                '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                                                                'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                                                                '(last visited June 22, 2009).</p>'+
+                                                                                '</div>'+
+                                                                                '</div>';
+
+
+          var contentString4 = '<div id="content">'+
+                                                                                                        '<div id="siteNotice">'+
+                                                                                                        '</div>'+
+                                                                                                        '<h1 id="firstHeading" class="firstHeading">Arsenale</h1>'+
+                                                                                                        '<div id="bodyContent">'+
+                                                                                                        '<p><b>Uluru</b>, number 4 <b>Ayers Rock</b>, is a large ' +
+                                                                                                        'sandstone rock formation in the southern part of the '+
+                                                                                                        'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+                                                                                                        'south west of the nearest large town, Alice Springs; 450&#160;km '+
+                                                                                                        '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+                                                                                                        'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+                                                                                                        'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+                                                                                                        'Aboriginal people of the area. It has many springs, waterholes, '+
+                                                                                                        'rock caves and ancient paintings. Uluru is listed as a World '+
+                                                                                                        'Heritage Site.</p>'+
+                                                                                                        '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                                                                                        'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                                                                                        '(last visited June 22, 2009).</p>'+
+                                                                                                        '</div>'+
+                '</div>';
+
+
+                var contentString5 = '<div id="content">'+
+                                        '<div id="siteNotice">'+
+                                        '</div>'+
+                                        '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+                                        '<div id="bodyContent">'+
+                                        '<p><b>Uluru</b>, this is number 5<b>Ayers Rock</b>, is a large ' +
+                                        'sandstone rock formation in the southern part of the '+
+                                        'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+                                        'south west of the nearest large town, Alice Springs; 450&#160;km '+
+                                        '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+                                        'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+                                        'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+                                        'Aboriginal people of the area. It has many springs, waterholes, '+
+                                        'rock caves and ancient paintings. Uluru is listed as a World '+
+                                        'Heritage Site.</p>'+
+                                        '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                        'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                        '(last visited June 22, 2009).</p>'+
+                                        '</div>'+
+                                        '</div>';
+
+
+                                        var contentString6 = '<div id="content">'+
+                                                                '<div id="siteNotice">'+
+                                                                '</div>'+
+                                                                '<h1 id="firstHeading" class="firstHeading">The Giardini</h1>'+
+                                                                '<div id="bodyContent">'+
+                                                                '<p><b>Uluru</b>, number 6 <b>Ayers Rock</b>, is a large ' +
+                                                                'sandstone rock formation in the southern part of the '+
+                                                                'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+                                                                'south west of the nearest large town, Alice Springs; 450&#160;km '+
+                                                                '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+                                                                'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+                                                                'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+                                                                'Aboriginal people of the area. It has many springs, waterholes, '+
+                                                                'rock caves and ancient paintings. Uluru is listed as a World '+
+                                                                'Heritage Site.</p>'+
+                                                                '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                                                'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                                                '(last visited June 22, 2009).</p>'+
+                                                                '</div>'+
+                          '</div>';
+
+                          var contentString7 = '<div id="content">'+
+                                                  '<div id="siteNotice">'+
+                                                  '</div>'+
+                                                  '<h1 id="firstHeading" class="firstHeading">Palazzo del Cinema</h1>'+
+                                                  '<div id="bodyContent">'+
+                                                  '<p><b>Uluru</b>, number 7 <b>Ayers Rock</b>, is a large ' +
+                                                  'sandstone rock formation in the southern part of the '+
+                                                  'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+                                                  'south west of the nearest large town, Alice Springs; 450&#160;km '+
+                                                  '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+                                                  'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+                                                  'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+                                                  'Aboriginal people of the area. It has many springs, waterholes, '+
+                                                  'rock caves and ancient paintings. Uluru is listed as a World '+
+                                                  'Heritage Site.</p>'+
+                                                  '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                                  'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                                  '(last visited June 22, 2009).</p>'+
+                                                  '</div>'+
+                                                  '</div>';
+        var sv = new google.maps.StreetViewService();
+
+        panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
+
+        // Set up the map.
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 45.4277858, lng: 12.3028277 },
+          zoom: 12,
+          streetViewControl: false,
+          styles :[{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}],
+        });
+
+    var infowindow = new google.maps.InfoWindow ({
+      content: contentString
+    }) ;
+
+    var infowindow2 = new google.maps.InfoWindow ({
+      content: contentString2
+    }) ;
+
+
+    var infowindow3 = new google.maps.InfoWindow ({
+      content: contentString3
+    }) ;
+
+    var infowindow4 = new google.maps.InfoWindow ({
+      content: contentString4
+    }) ;
+
+
+    var infowindow5 = new google.maps.InfoWindow ({
+      content: contentString5
+    }) ;
+
+    var infowindow6 = new google.maps.InfoWindow ({
+      content: contentString6
+    }) ;
+
+    var infowindow7 = new google.maps.InfoWindow ({
+      content: contentString7
+    }) ;
+
+
+    var labels = '12345678';
+         var labelIndex = 0;
+
+         var marker1= new google.maps.Marker({
+           position: {lat: 45.4693314, lng: 12.2552426},
+           map: map,
+             title:'Asac - Historical Archives of Contemporary Arts',
+             label: labels[labelIndex++ % labels.length],
+         });
+
+        var marker2= new google.maps.Marker({
+          position: {lat: 45.43412659327395, lng: 12.32698742411617},
+          map: map,
+          title: ' Ca Giustinian',
+          label: labels[labelIndex++ % labels.length],
+        });
+
+        var marker3= new google.maps.Marker({
+          position: {lat: 45.4337967, lng: 12.3500867},
+          map: map,
+          title:'Teatro Piccolo Arsenale',
+          label: labels[labelIndex++ % labels.length],
+        });
+
+        var marker4= new google.maps.Marker({
+          position: {lat: 45.4334667, lng: 12.3505046},
+          map: map,
+          title:'Arsenale',
+          label: labels[labelIndex++ % labels.length],
+        });
+
+
+        var marker5= new google.maps.Marker({
+          position: {lat: 45.4357087, lng: 12.3560396},
+          map: map,
+          title: 'Teatro alle Tese',
+          label: labels[labelIndex++ % labels.length],
+        });
+
+        var marker6= new google.maps.Marker({
+          position: {lat: 45.42853683121339, lng: 12.35789548715513},
+          map: map,
+          title: 'The Giardini',
+          label: labels[labelIndex++ % labels.length],
+        });
+
+
+        var marker7= new google.maps.Marker({
+          position: {lat: 45.405686, lng: 12.3680141},
+          map: map,
+          title:'Palazzo del Cinema',
+          label: labels[labelIndex++ % labels.length],
+        });
+
+
+
+marker1.addListener('click', function() {
+infowindow.open(map, marker1);
+var markerPanoID = data.location.pano;
+});
+
+marker2.addListener('click', function() {
+infowindow2.open(map, marker2);
+var markerPanoID = data.location.pano;
+});
+
+marker3.addListener('click', function() {
+infowindow3.open(map, marker3);
+var markerPanoID = data.location.pano;
+});
+
+marker4.addListener('click', function() {
+infowindow4.open(map, marker4);
+var markerPanoID = data.location.pano;
+});
+
+marker5.addListener('click', function() {
+infowindow5.open(map, marker5);
+var markerPanoID = data.location.pano;
+});
+
+marker6.addListener('click', function() {
+infowindow6.open(map, marker6);
+var markerPanoID = data.location.pano;
+});
+
+marker7.addListener('click', function() {
+infowindow7.open(map, marker7);
+var markerPanoID = data.location.pano;
+});
+
+        // Set the initial Street View camera to the center of the map
+        sv.getPanorama({location: berkeley, radius: 50}, processSVData);
+        sv.getPanorama({location: location2, radius: 50}, processSVData);
+        sv.getPanorama({location: location3, radius: 50}, processSVData);
+        sv.getPanorama({location: location4, radius: 50}, processSVData);
+        sv.getPanorama({location: location5, radius: 50}, processSVData);
+        sv.getPanorama({location: location6, radius: 50}, processSVData);
+        sv.getPanorama({location: location7, radius: 50}, processSVData);
+        sv.getPanorama({location: location8, radius: 50}, processSVData);
+
+
+        // Look for a nearby Street View panorama when the map is clicked.
+        // getPanoramaByLocation will return the nearest pano when the
+        // given radius is 50 meters or less.
+      //  map.addListener('click', function(event) {
+      //  sv.getPanorama({location: event.latLng, radius: 50}, processSVData);
+      //  });
+      }
+
+      function processSVData(data, status) {
+        if (status === google.maps.StreetViewStatus.OK) {
+          var marker = new google.maps.Marker({
+            position: data.location.latLng,
+            map: map,
+
+          });
+
+          panorama.setPano(data.location.pano);
+          panorama.setPov({
+            heading: 270,
+            pitch: 0
+          });
+          panorama.setVisible(true);
+
+          marker.addListener('click', function() {
+            var markerPanoID = data.location.pano;
+
+            // Set the Pano to use the passed panoID.
+            panorama.setPano(markerPanoID);
+            panorama.setPov({
+              heading: 270,
+              pitch: 0
+            });
+            panorama.setVisible(true);
+          });
+        } else {
+          console.error('Street View data not found for this location.');
+        }
+      }
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsNwWPBwsDvTuk6BDiKqtrhbixj8GCleI&callback=initMap">
+    </script>
+  </body>
+</html>

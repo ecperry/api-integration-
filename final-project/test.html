@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Directly accessing Street View data</title>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/desktop.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+
+
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="index.html"><p> VENICE BIENNALE <img src="photos/biennale.jpeg" size="10%"></p></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#"> venues </a></li>
+        <li><a href="scratch-html/social-feeds.html">photos</a></li>
+        <li><a href="scratch-html/twitter.html">tweets </a></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  </head>
+  <body>
+<div id="frame">
+    <div id="map" style="width: 50%; height: 100%;float:left"></div>
+
+    <div id="pano" style="width: 50%; height: 100%;"></div>
+</div>
+<script>
+var gmarkers = [];
+var map = null;
+
+function initialize() {
+// create the map
+var myOptions = {
+    zoom: 11,
+    center: new google.maps.LatLng(51.519243, -0.126661),
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+    },
+    navigationControl: true,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+map = new google.maps.Map(document.getElementById("map-canvas-big"),
+myOptions);
+google.maps.event.addListener(map, 'click', function () {
+    infowindow.close();
+});
+var point = new google.maps.LatLng(51.5608308012934, -0.0540925428914196);
+var marker = createMarker(point, " Clapton ", "<div class='scrittafumetto' id='proprieta_4940'><strong><div class='titolo'> Title</div></strong><br /><a class='mostra_vedi'>Vedi</a></span></div>");
+var point2 = new google.maps.LatLng(51.56, -0.05);
+
+var marker2 = createMarker(point2, " somewhere ", "<div class='scrittafumetto' id='proprieta_4941'><strong><div class='titolo'> Title</div></strong><br /><a class='mostra_mardi'>Mardi</a></span></div>");
+
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+var infowindow = new google.maps.InfoWindow({
+size: new google.maps.Size(150, 50)
+});
+
+
+function createMarker(latlng, name, html) {
+var contentString = html;
+var marker = new google.maps.Marker({
+    position: latlng,
+    map: map,
+    icon: 'https://www.google.com/mapfiles/marker.png',
+    zIndex: Math.round(latlng.lat() * -100000) << 5
+});
+
+google.maps.event.addListener(marker, 'click', function () {
+    infowindow.setContent(contentString);
+    infowindow.open(map, marker);
+});
+// save the info we need to use later for the side_bar
+gmarkers.push(marker);
+// add a line to the side_bar html
+google.maps.event.addListener(marker, 'click', function (marker, i) {
+    for (var i = 0; i < gmarkers.length; i++) {
+        gmarkers[i].setIcon('https://www.google.com/mapfiles/marker.png'); // set back to default
+    }
+    this.setIcon('https://www.google.com/mapfiles/marker_green.png');
+    var marker_id = marker.id;
+
+
+    if ($('#new-overview-main_' + marker_id).css('display') == 'block') {
+        $('#new-overview-main_' + marker_id).css('display', 'none');
+    } else {
+        $('#new-overview-main_' + marker_id).css('display', 'block');
+    }
+
+});
+
+}
+</script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsNwWPBwsDvTuk6BDiKqtrhbixj8GCleI&callback=initMap">
+    </script>
+  </body>
+</html>

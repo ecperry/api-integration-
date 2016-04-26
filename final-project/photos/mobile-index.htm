@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)file:///Users/ecperry/Dropbox/2016/JOMC%20586/final-project/mobile-index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:black;text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}</style><link type="text/css" rel="stylesheet" href="./mobile-index_files/css"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}</style>
+    
+    <link href="./mobile-index_files/css(1)" rel="stylesheet" type="text/css">
+    <link href="./mobile-index_files/css(2)" rel="stylesheet" type="text/css">
+    <link href="./mobile-index_files/bootstrap.min.css" rel="stylesheet">
+      <link href="./mobile-index_files/desktop.css" rel="stylesheet">
+          <link href="./mobile-index_files/desktop.css" rel="stylesheet">
+    <script src="./mobile-index_files/jquery.min.js"></script>
+    <script src="./mobile-index_files/bootstrap.min.js"></script>
+
+
+
+  <script type="text/javascript" charset="UTF-8" src="./mobile-index_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./mobile-index_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./mobile-index_files/geometry.js"></script><script type="text/javascript" charset="UTF-8" src="./mobile-index_files/streetview.js"></script><script type="text/javascript" charset="UTF-8" src="./mobile-index_files/map.js"></script><script type="text/javascript" charset="UTF-8" src="./mobile-index_files/marker.js"></script><script type="text/javascript" charset="UTF-8" src="./mobile-index_files/infowindow.js"></script><script type="text/javascript" charset="UTF-8" src="./mobile-index_files/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&amp;1m2&amp;1d45.19386140897592&amp;2d11.954032709797161&amp;2m2&amp;1d45.647997455549095&amp;2d12.657211104491125&amp;2u12&amp;4sen-US&amp;5e0&amp;6sm%40347000000&amp;7b0&amp;8e0&amp;9b0&amp;callback=_xdc_._bex6rx&amp;token=46996"></script><script type="text/javascript" charset="UTF-8" src="./mobile-index_files/stats.js"></script><script type="text/javascript" charset="UTF-8" src="./mobile-index_files/controls.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/vt?pb=!1m4!1m3!1i12!2i2186!3i1465!1m4!1m3!1i12!2i2187!3i1465!1m4!1m3!1i12!2i2186!3i1466!1m4!1m3!1i12!2i2186!3i1467!1m4!1m3!1i12!2i2187!3i1466!1m4!1m3!1i12!2i2187!3i1467!1m4!1m3!1i12!2i2188!3i1465!1m4!1m3!1i12!2i2189!3i1465!1m4!1m3!1i12!2i2188!3i1466!1m4!1m3!1i12!2i2188!3i1467!1m4!1m3!1i12!2i2189!3i1466!1m4!1m3!1i12!2i2189!3i1467!2m3!1e0!2sm!3i347014749!3m14!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmcuZnxwLmM6I2ZmZDNkM2QzLHMudDo0fHAuYzojZmY4MDgwODB8cC52Om9mZixzLnQ6NDl8cy5lOmcuc3xwLnY6b258cC5jOiNmZmIzYjNiMyxzLnQ6NDl8cy5lOmcuZnxwLmM6I2ZmZmZmZmZmLHMudDo1MXxzLmU6Zy5mfHAudjpvbnxwLmM6I2ZmZmZmZmZmfHAudzoxLjgscy50OjUxfHMuZTpnLnN8cC5jOiNmZmQ3ZDdkNyxzLnQ6MnxzLmU6Zy5mfHAudjpvbnxwLmM6I2ZmZWJlYmViLHMudDoxfHMuZTpnfHAuYzojZmZhN2E3YTcscy50OjUwfHMuZTpnLmZ8cC5jOiNmZmZmZmZmZixzLnQ6NTB8cy5lOmcuZnxwLmM6I2ZmZmZmZmZmLHMudDo1fHMuZTpnLmZ8cC52Om9ufHAuYzojZmZlZmVmZWYscy50OjN8cy5lOmwudC5mfHAuYzojZmY2OTY5Njkscy50OjF8cy5lOmwudC5mfHAudjpvbnxwLmM6I2ZmNzM3MzczLHMudDoyfHMuZTpsLml8cC52Om9mZixzLnQ6MnxzLmU6bHxwLnY6b2ZmLHMudDo1MHxzLmU6Zy5zfHAuYzojZmZkNmQ2ZDYscy50OjN8cy5lOmwuaXxwLnY6b2ZmLHMudDoyfHMuZTpnLmZ8cC5jOiNmZmRhZGFkYQ!4e3!12m1!5b1&amp;callback=_xdc_._m895x7&amp;token=113951"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1sfile%3A%2F%2F%2FUsers%2Fecperry%2FDropbox%2F2016%2FJOMC%2520586%2Ffinal-project%2Fmobile-index.html&amp;4sAIzaSyCsNwWPBwsDvTuk6BDiKqtrhbixj8GCleI&amp;callback=_xdc_._o30tgq&amp;token=111225"></script></head>
+  <body>
+
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header mobile">
+      <a class="navbar-brand" href="file:///Users/ecperry/Dropbox/2016/JOMC%20586/final-project/index.html"><p class="mobile"> VENICE BIENNALE <img src="./mobile-index_files/biennale.jpeg" size="10%"></p></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+      <ul class="nav navbar-nav navbar-fixed-bottom">
+        <li class="active"><a href="file:///Users/ecperry/Dropbox/2016/JOMC%20586/final-project/mobile-index.html#"> venues</a></li>
+        <li><a href="file:///Users/ecperry/Dropbox/2016/JOMC%20586/final-project/scratch-html/social-feeds.html">photos</a></li>
+        <li><a href="file:///Users/ecperry/Dropbox/2016/JOMC%20586/final-project/scratch-html/twitter.html">tweets</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+<!-- /.container-fluid -->
+  </nav>
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      height: 100%;
+    }
+  </style>
+
+<div id="frame">
+    <div id="map" style="width: 100%; height: 100%; float: left; position: relative; overflow: hidden; transform: translateZ(0px); background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0;"><div style="position: absolute; left: 0px; top: 0px; overflow: hidden; width: 100%; height: 100%; z-index: 0; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;) 8 8, default;"><div style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 80px; top: 170px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 336px; top: 170px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 336px; top: -86px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 80px; top: -86px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 80px; top: 426px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 336px; top: 426px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -176px; top: 170px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 592px; top: 170px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -176px; top: 426px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 592px; top: -86px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: -176px; top: -86px;"></div><div style="width: 256px; height: 256px; transform: translateZ(0px); position: absolute; left: 592px; top: 426px;"></div></div></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 80px; top: 170px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 336px; top: 170px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 336px; top: -86px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 80px; top: -86px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 80px; top: 426px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 336px; top: 426px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -176px; top: 170px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 592px; top: 170px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -176px; top: 426px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 592px; top: -86px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: -176px; top: -86px;"></div><div style="width: 256px; height: 256px; overflow: hidden; transform: translateZ(0px); position: absolute; left: 592px; top: 426px;"></div></div></div><div style="width: 22px; height: 40px; overflow: hidden; position: absolute; left: 181px; top: 92px; z-index: 132;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="width: 22px; height: 40px; overflow: hidden; position: absolute; left: 390px; top: 238px; z-index: 278;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="width: 22px; height: 40px; overflow: hidden; position: absolute; left: 457px; top: 239px; z-index: 279;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="width: 22px; height: 40px; overflow: hidden; position: absolute; left: 458px; top: 241px; z-index: 281;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="width: 22px; height: 40px; overflow: hidden; position: absolute; left: 475px; top: 231px; z-index: 271;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="width: 22px; height: 40px; overflow: hidden; position: absolute; left: 480px; top: 261px; z-index: 301;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="width: 22px; height: 40px; overflow: hidden; position: absolute; left: 509px; top: 356px; z-index: 396;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 192px; top: 104px; z-index: 132;"><div style="height: 100px; margin-top: -50px; margin-left: -50%; display: table; border-spacing: 0px;"><div style="display: table-cell; vertical-align: middle; white-space: nowrap; text-align: center;"><div style="color: rgb(0, 0, 0); font-size: 14px; font-family: Roboto, Arial, sans-serif;">1</div></div></div></div><div style="position: absolute; left: 401px; top: 250px; z-index: 278;"><div style="height: 100px; margin-top: -50px; margin-left: -50%; display: table; border-spacing: 0px;"><div style="display: table-cell; vertical-align: middle; white-space: nowrap; text-align: center;"><div style="color: rgb(0, 0, 0); font-size: 14px; font-family: Roboto, Arial, sans-serif;">2</div></div></div></div><div style="position: absolute; left: 468px; top: 251px; z-index: 279;"><div style="height: 100px; margin-top: -50px; margin-left: -50%; display: table; border-spacing: 0px;"><div style="display: table-cell; vertical-align: middle; white-space: nowrap; text-align: center;"><div style="color: rgb(0, 0, 0); font-size: 14px; font-family: Roboto, Arial, sans-serif;">3</div></div></div></div><div style="position: absolute; left: 469px; top: 253px; z-index: 281;"><div style="height: 100px; margin-top: -50px; margin-left: -50%; display: table; border-spacing: 0px;"><div style="display: table-cell; vertical-align: middle; white-space: nowrap; text-align: center;"><div style="color: rgb(0, 0, 0); font-size: 14px; font-family: Roboto, Arial, sans-serif;">4</div></div></div></div><div style="position: absolute; left: 486px; top: 243px; z-index: 271;"><div style="height: 100px; margin-top: -50px; margin-left: -50%; display: table; border-spacing: 0px;"><div style="display: table-cell; vertical-align: middle; white-space: nowrap; text-align: center;"><div style="color: rgb(0, 0, 0); font-size: 14px; font-family: Roboto, Arial, sans-serif;">5</div></div></div></div><div style="position: absolute; left: 491px; top: 273px; z-index: 301;"><div style="height: 100px; margin-top: -50px; margin-left: -50%; display: table; border-spacing: 0px;"><div style="display: table-cell; vertical-align: middle; white-space: nowrap; text-align: center;"><div style="color: rgb(0, 0, 0); font-size: 14px; font-family: Roboto, Arial, sans-serif;">6</div></div></div></div><div style="position: absolute; left: 520px; top: 368px; z-index: 396;"><div style="height: 100px; margin-top: -50px; margin-left: -50%; display: table; border-spacing: 0px;"><div style="display: table-cell; vertical-align: middle; white-space: nowrap; text-align: center;"><div style="color: rgb(0, 0, 0); font-size: 14px; font-family: Roboto, Arial, sans-serif;">7</div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="transform: translateZ(0px); position: absolute; left: 80px; top: 170px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i2187!3i1466!4i256!2m3!1e0!2sm!3i347014677!3m14!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmcuZnxwLmM6I2ZmZDNkM2QzLHMudDo0fHAuYzojZmY4MDgwODB8cC52Om9mZixzLnQ6NDl8cy5lOmcuc3xwLnY6b258cC5jOiNmZmIzYjNiMyxzLnQ6NDl8cy5lOmcuZnxwLmM6I2ZmZmZmZmZmLHMudDo1MXxzLmU6Zy5mfHAudjpvbnxwLmM6I2ZmZmZmZmZmfHAudzoxLjgscy50OjUxfHMuZTpnLnN8cC5jOiNmZmQ3ZDdkNyxzLnQ6MnxzLmU6Zy5mfHAudjpvbnxwLmM6I2ZmZWJlYmViLHMudDoxfHMuZTpnfHAuYzojZmZhN2E3YTcscy50OjUwfHMuZTpnLmZ8cC5jOiNmZmZmZmZmZixzLnQ6NTB8cy5lOmcuZnxwLmM6I2ZmZmZmZmZmLHMudDo1fHMuZTpnLmZ8cC52Om9ufHAuYzojZmZlZmVmZWYscy50OjN8cy5lOmwudC5mfHAuYzojZmY2OTY5Njkscy50OjF8cy5lOmwudC5mfHAudjpvbnxwLmM6I2ZmNzM3MzczLHMudDoyfHMuZTpsLml8cC52Om9mZixzLnQ6MnxzLmU6bHxwLnY6b2ZmLHMudDo1MHxzLmU6Zy5zfHAuYzojZmZkNmQ2ZDYscy50OjN8cy5lOmwuaXxwLnY6b2ZmLHMudDoyfHMuZTpnLmZ8cC5jOiNmZmRhZGFkYQ!4e0&amp;token=15078" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="transform: translateZ(0px); position: absolute; left: 336px; top: 170px; transition: opacity 200ms ease-out;"><img src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i2188!3i1466!4i256!2m3!1e0!2sm!3i347014665!3m14!2sen-US!3sUS!5e18!12m1!1e47!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjZ8cy5lOmcuZnxwLmM6I2ZmZDNkM2QzLHMudDo0fHAuYzojZmY4MDgwODB8cC52Om9mZixzLnQ6NDl8cy5lOmcuc3xwLnY6b258cC5jOiNmZmIzYjNiMyxzLnQ6NDl8cy5lOmcuZnxwLmM6I2ZmZmZmZmZmLHMudDo1MXxzLmU6Zy5mfHAudjpvbnxwLmM6I2ZmZmZmZmZmfHAudzoxLjgscy50OjUxfHMuZTpnLnN8cC5jOiNmZmQ3ZDdkNyxzLnQ6MnxzLmU6Zy5mfHAudjpvbnxwLmM6I2ZmZWJlYmViLHMudDoxfHMuZTpnfHAuYzojZmZhN2E3YTcscy50OjUwfHMuZTpnLmZ8cC5jOiNmZmZmZmZmZixzLnQ6NTB8cy5lOmcuZnxwLmM6I2ZmZmZmZmZmLHMudDo1fHMuZTpnLmZ8cC52Om9ufHAuYzojZmZlZmVmZWYscy50OjN8cy5lOmwudC5mfHAuYzojZmY2OTY5Njkscy50OjF8cy5lOmwudC5mfHAudjpvbnxwLmM6I2ZmNzM3MzczLHMudDoyfHMuZTpsLml8cC52Om9mZixzLnQ6MnxzLmU6bHxwLnY6b2ZmLHMudDo1MHxzLmU6Zy5zfHAuYzojZmZkNmQ2ZDYscy50OjN8cy5lOmwuaXxwLnY6b2ZmLHMudDoyfHMuZTpnLmZ8cC5jOiNmZmRhZGFkYQ!4e0&amp;token=51472" draggable="false" alt="" style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="position: absolute; left: 0px; top: 0px; z-index: 2; width: 100%; height: 100%; transition-duration: 0.3s; opacity: 0; display: none;"><p class="gm-style-pbt">Use two fingers to move the map</p></div><div style="position: absolute; left: 0px; top: 0px; z-index: 3; width: 100%; height: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 4; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div class="gmnoprint" style="width: 22px; height: 40px; overflow: hidden; position: absolute; opacity: 0.01; left: 181px; top: 92px; z-index: 132;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" usemap="#gmimap0" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"><map name="gmimap0" id="gmimap0"><area href="javascript:void(0)" log="miw" coords="8,0,5,1,4,2,3,3,2,4,2,5,1,6,1,7,0,8,0,14,1,15,1,16,2,17,2,18,3,19,3,20,4,21,5,22,5,23,6,24,7,25,7,27,8,28,8,29,9,30,9,33,10,34,10,40,11,40,11,34,12,33,12,30,13,29,13,28,14,27,14,25,15,24,16,23,16,22,17,21,18,20,18,19,19,18,19,17,20,16,20,15,21,14,21,8,20,7,20,6,19,5,19,4,18,3,17,2,16,1,14,1,13,0,8,0" shape="poly" title="Asac - Historical Archives of Contemporary Arts" style="cursor: pointer;"></map></div><div class="gmnoprint" style="width: 22px; height: 40px; overflow: hidden; position: absolute; opacity: 0.01; left: 390px; top: 238px; z-index: 278;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" usemap="#gmimap1" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"><map name="gmimap1" id="gmimap1"><area href="javascript:void(0)" log="miw" coords="8,0,5,1,4,2,3,3,2,4,2,5,1,6,1,7,0,8,0,14,1,15,1,16,2,17,2,18,3,19,3,20,4,21,5,22,5,23,6,24,7,25,7,27,8,28,8,29,9,30,9,33,10,34,10,40,11,40,11,34,12,33,12,30,13,29,13,28,14,27,14,25,15,24,16,23,16,22,17,21,18,20,18,19,19,18,19,17,20,16,20,15,21,14,21,8,20,7,20,6,19,5,19,4,18,3,17,2,16,1,14,1,13,0,8,0" shape="poly" title=" Ca Giustinian" style="cursor: pointer;"></map></div><div class="gmnoprint" style="width: 22px; height: 40px; overflow: hidden; position: absolute; opacity: 0.01; left: 457px; top: 239px; z-index: 279;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" usemap="#gmimap2" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"><map name="gmimap2" id="gmimap2"><area href="javascript:void(0)" log="miw" coords="8,0,5,1,4,2,3,3,2,4,2,5,1,6,1,7,0,8,0,14,1,15,1,16,2,17,2,18,3,19,3,20,4,21,5,22,5,23,6,24,7,25,7,27,8,28,8,29,9,30,9,33,10,34,10,40,11,40,11,34,12,33,12,30,13,29,13,28,14,27,14,25,15,24,16,23,16,22,17,21,18,20,18,19,19,18,19,17,20,16,20,15,21,14,21,8,20,7,20,6,19,5,19,4,18,3,17,2,16,1,14,1,13,0,8,0" shape="poly" title="Teatro Piccolo Arsenale" style="cursor: pointer;"></map></div><div class="gmnoprint" style="width: 22px; height: 40px; overflow: hidden; position: absolute; opacity: 0.01; left: 458px; top: 241px; z-index: 281;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" usemap="#gmimap3" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"><map name="gmimap3" id="gmimap3"><area href="javascript:void(0)" log="miw" coords="8,0,5,1,4,2,3,3,2,4,2,5,1,6,1,7,0,8,0,14,1,15,1,16,2,17,2,18,3,19,3,20,4,21,5,22,5,23,6,24,7,25,7,27,8,28,8,29,9,30,9,33,10,34,10,40,11,40,11,34,12,33,12,30,13,29,13,28,14,27,14,25,15,24,16,23,16,22,17,21,18,20,18,19,19,18,19,17,20,16,20,15,21,14,21,8,20,7,20,6,19,5,19,4,18,3,17,2,16,1,14,1,13,0,8,0" shape="poly" title="Arsenale" style="cursor: pointer;"></map></div><div class="gmnoprint" style="width: 22px; height: 40px; overflow: hidden; position: absolute; opacity: 0.01; left: 475px; top: 231px; z-index: 271;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" usemap="#gmimap4" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"><map name="gmimap4" id="gmimap4"><area href="javascript:void(0)" log="miw" coords="8,0,5,1,4,2,3,3,2,4,2,5,1,6,1,7,0,8,0,14,1,15,1,16,2,17,2,18,3,19,3,20,4,21,5,22,5,23,6,24,7,25,7,27,8,28,8,29,9,30,9,33,10,34,10,40,11,40,11,34,12,33,12,30,13,29,13,28,14,27,14,25,15,24,16,23,16,22,17,21,18,20,18,19,19,18,19,17,20,16,20,15,21,14,21,8,20,7,20,6,19,5,19,4,18,3,17,2,16,1,14,1,13,0,8,0" shape="poly" title="Teatro alle Tese" style="cursor: pointer;"></map></div><div class="gmnoprint" style="width: 22px; height: 40px; overflow: hidden; position: absolute; opacity: 0.01; left: 480px; top: 261px; z-index: 301;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" usemap="#gmimap5" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"><map name="gmimap5" id="gmimap5"><area href="javascript:void(0)" log="miw" coords="8,0,5,1,4,2,3,3,2,4,2,5,1,6,1,7,0,8,0,14,1,15,1,16,2,17,2,18,3,19,3,20,4,21,5,22,5,23,6,24,7,25,7,27,8,28,8,29,9,30,9,33,10,34,10,40,11,40,11,34,12,33,12,30,13,29,13,28,14,27,14,25,15,24,16,23,16,22,17,21,18,20,18,19,19,18,19,17,20,16,20,15,21,14,21,8,20,7,20,6,19,5,19,4,18,3,17,2,16,1,14,1,13,0,8,0" shape="poly" title="The Giardini" style="cursor: pointer;"></map></div><div class="gmnoprint" style="width: 22px; height: 40px; overflow: hidden; position: absolute; opacity: 0.01; left: 509px; top: 356px; z-index: 396;"><img src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi-dotless.png" draggable="false" usemap="#gmimap6" style="position: absolute; left: 0px; top: 0px; width: 22px; height: 40px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"><map name="gmimap6" id="gmimap6"><area href="javascript:void(0)" log="miw" coords="8,0,5,1,4,2,3,3,2,4,2,5,1,6,1,7,0,8,0,14,1,15,1,16,2,17,2,18,3,19,3,20,4,21,5,22,5,23,6,24,7,25,7,27,8,28,8,29,9,30,9,33,10,34,10,40,11,40,11,34,12,33,12,30,13,29,13,28,14,27,14,25,15,24,16,23,16,22,17,21,18,20,18,19,19,18,19,17,20,16,20,15,21,14,21,8,20,7,20,6,19,5,19,4,18,3,17,2,16,1,14,1,13,0,8,0" shape="poly" title="Palazzo del Cinema" style="cursor: pointer;"></map></div></div><div style="transform: translateZ(0px); position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=45.427786,12.302828&amp;z=12&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 181px; top: 214px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2016 Google</div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 121px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2016 Google</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2016 Google</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 95px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><div style="width: 25px; height: 25px; overflow: hidden; display: none; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" class="gm-fullscreen-control" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 112px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@45.4277858,12.3028277,12z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="28" controlheight="55" style="margin: 10px; -webkit-user-select: none; position: absolute; bottom: 69px; right: 28px;"><div class="gmnoprint" controlwidth="28" controlheight="55" style="position: absolute; left: 0px; top: 0px;"><div draggable="false" style="-webkit-user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; width: 28px; height: 55px; background-color: rgb(255, 255, 255);"><div title="Zoom in" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; top: 0px; background-color: rgb(230, 230, 230);"></div><div title="Zoom out" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" style="position: absolute; left: 0px; top: -15px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="Rotate map 90 degrees" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; display: none; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show street map" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 21px; font-weight: 500; background-color: rgb(255, 255, 255); background-clip: padding-box;">Map</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 31px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show street map with terrain" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></span><label style="vertical-align: middle; cursor: pointer;">Terrain</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="Show satellite imagery" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-left-width: 0px; min-width: 39px; background-color: rgb(255, 255, 255); background-clip: padding-box;">Satellite</div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 31px; text-align: left; display: none; background-color: white;"><div draggable="false" title="Show imagery with street names" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></span><label style="vertical-align: middle; cursor: pointer;">Labels</label></div></div></div></div></div></div>
+
+</div>
+    <script>
+      /*
+       * Click the map to set a new location for the Street View camera.
+       */
+
+      var map;
+      var panorama;
+
+      function initMap() {
+        var berkeley = {lat: 45.43412659327395, lng: 12.32698742411617};
+        var location2 = {lat: 45.42853683121339, lng: 12.35789548715513};
+        var location3 = {lat: 45.42844607957628, lng: 12.35792939912807};
+        var location4 = {lat: 45.4357087, lng: 12.3560396};
+        var location5 = {lat: 45.4334667, lng: 12.3505046} ;
+        var location6 =  {lat: 45.4337967, lng: 12.3500867};
+        var location7 = {lat: 45.405686, lng: 12.3680141};
+        var location8 = {lat: 45.4693314, lng: 12.2552426};
+
+
+        var contentString = '<div id="content">'+
+                    '<div id="siteNotice">'+
+                    '</div>'+
+                    '<h1 id="firstHeading" class="firstHeading">Asac - Historical Archives of Contemporary Arts</h1>'+
+                    '<div id="bodyContent">'+
+                    '<p><b></b>, read more about the current exhibits at Asac'+
+                    '<p>here<a href="http://www.labiennale.org/en/biennale/venues/vega.html?back=true"</p>'+
+                    '</div>'+
+                    '</div>';
+
+        var contentString2 = '<div id="content">'+
+                                '<div id="siteNotice">'+
+                                '</div>'+
+                                '<h1 id="firstHeading" class="firstHeading">Ca Giustinian</h1>'+
+                                '<div id="bodyContent">'+
+                                '<p><b></b>, this is number 2 <p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                '(last visited June 22, 2009).</p>'+
+                                '</div>'+
+                                '</div>';
+
+
+              var contentString3 = '<div id="content">'+
+                                                        '<div id="siteNotice">'+
+                                                        '</div>'+
+                                                        '<h1 id="firstHeading" class="firstHeading">Teatro Piccolo Arsenale</h1>'+
+                                                        '<div id="bodyContent">'+
+                                                        '<p><b>Uluru</b>, this is number 3 <b>Ayers Rock</b>, is a large <p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                                        'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                                        '(last visited June 22, 2009).</p>'+
+                                                        '</div>'+
+                                                        '</div>';
+
+                                                        var contentString4 = '<div id="content">'+
+                                                                                '<div id="siteNotice">'+
+                                                                                '</div>'+
+                                                                                '<h1 id="firstHeading" class="firstHeading">Arsenale</h1>'+
+                                                                                '<div id="bodyContent">'+
+                                                                                '<p><b>Uluru</b>, This is number 4 <b>Ayers Rock</b>, is a large ' +
+                                                                                'sandstone rock formation in the southern part of the '+
+                                                                                'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+                                                                                'south west of the nearest large town, Alice Springs; 450&#160;km '+
+                                                                                '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+                                                                                'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+                                                                                'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+                                                                                'Aboriginal people of the area. It has many springs, waterholes, '+
+                                                                                'rock caves and ancient paintings. Uluru is listed as a World '+
+                                                                                'Heritage Site.</p>'+
+                                                                                '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                                                                'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                                                                '(last visited June 22, 2009).</p>'+
+                                                                                '</div>'+
+                                                                                '</div>';
+
+
+          var contentString4 = '<div id="content">'+
+                                                                                                        '<div id="siteNotice">'+
+                                                                                                        '</div>'+
+                                                                                                        '<h1 id="firstHeading" class="firstHeading">Arsenale</h1>'+
+                                                                                                        '<div id="bodyContent">'+
+                                                                                                        '<p><b>Uluru</b>, number 4 <b>Ayers Rock</b>, is a large ' +
+                                                                                                        'sandstone rock formation in the southern part of the '+
+                                                                                                        'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+                                                                                                        'south west of the nearest large town, Alice Springs; 450&#160;km '+
+                                                                                                        '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+                                                                                                        'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+                                                                                                        'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+                                                                                                        'Aboriginal people of the area. It has many springs, waterholes, '+
+                                                                                                        'rock caves and ancient paintings. Uluru is listed as a World '+
+                                                                                                        'Heritage Site.</p>'+
+                                                                                                        '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                                                                                        'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                                                                                        '(last visited June 22, 2009).</p>'+
+                                                                                                        '</div>'+
+                '</div>';
+
+
+                var contentString5 = '<div id="content">'+
+                                        '<div id="siteNotice">'+
+                                        '</div>'+
+                                        '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+                                        '<div id="bodyContent">'+
+                                        '<p><b>Uluru</b>, this is number 5<b>Ayers Rock</b>, is a large ' +
+                                        'sandstone rock formation in the southern part of the '+
+                                        'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+                                        'south west of the nearest large town, Alice Springs; 450&#160;km '+
+                                        '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+                                        'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+                                        'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+                                        'Aboriginal people of the area. It has many springs, waterholes, '+
+                                        'rock caves and ancient paintings. Uluru is listed as a World '+
+                                        'Heritage Site.</p>'+
+                                        '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                        'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                        '(last visited June 22, 2009).</p>'+
+                                        '</div>'+
+                                        '</div>';
+
+
+                                        var contentString6 = '<div id="content">'+
+                                                                '<div id="siteNotice">'+
+                                                                '</div>'+
+                                                                '<h1 id="firstHeading" class="firstHeading">The Giardini</h1>'+
+                                                                '<div id="bodyContent">'+
+                                                                '<p><b>Uluru</b>, number 6 <b>Ayers Rock</b>, is a large ' +
+                                                                'sandstone rock formation in the southern part of the '+
+                                                                'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+                                                                'south west of the nearest large town, Alice Springs; 450&#160;km '+
+                                                                '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+                                                                'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+                                                                'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+                                                                'Aboriginal people of the area. It has many springs, waterholes, '+
+                                                                'rock caves and ancient paintings. Uluru is listed as a World '+
+                                                                'Heritage Site.</p>'+
+                                                                '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                                                'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                                                '(last visited June 22, 2009).</p>'+
+                                                                '</div>'+
+                          '</div>';
+
+                          var contentString7 = '<div id="content">'+
+                                                  '<div id="siteNotice">'+
+                                                  '</div>'+
+                                                  '<h1 id="firstHeading" class="firstHeading">Palazzo del Cinema</h1>'+
+                                                  '<div id="bodyContent">'+
+                                                  '<p><b>Uluru</b>, number 7 <b>Ayers Rock</b>, is a large ' +
+                                                  'sandstone rock formation in the southern part of the '+
+                                                  'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+                                                  'south west of the nearest large town, Alice Springs; 450&#160;km '+
+                                                  '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+                                                  'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+                                                  'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+                                                  'Aboriginal people of the area. It has many springs, waterholes, '+
+                                                  'rock caves and ancient paintings. Uluru is listed as a World '+
+                                                  'Heritage Site.</p>'+
+                                                  '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+                                                  'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+                                                  '(last visited June 22, 2009).</p>'+
+                                                  '</div>'+
+                                                  '</div>';
+        var sv = new google.maps.StreetViewService();
+
+        panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'));
+
+        // Set up the map.
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 45.4277858, lng: 12.3028277 },
+          zoom: 12,
+          streetViewControl: false,
+          styles :[{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}],
+        });
+
+    var infowindow = new google.maps.InfoWindow ({
+      content: contentString
+    }) ;
+
+    var infowindow2 = new google.maps.InfoWindow ({
+      content: contentString2
+    }) ;
+
+
+    var infowindow3 = new google.maps.InfoWindow ({
+      content: contentString3
+    }) ;
+
+    var infowindow4 = new google.maps.InfoWindow ({
+      content: contentString4
+    }) ;
+
+
+    var infowindow5 = new google.maps.InfoWindow ({
+      content: contentString5
+    }) ;
+
+    var infowindow6 = new google.maps.InfoWindow ({
+      content: contentString6
+    }) ;
+
+    var infowindow7 = new google.maps.InfoWindow ({
+      content: contentString7
+    }) ;
+
+
+    var labels = '12345678';
+         var labelIndex = 0;
+
+         var marker1= new google.maps.Marker({
+           position: {lat: 45.4693314, lng: 12.2552426},
+           map: map,
+             title:'Asac - Historical Archives of Contemporary Arts',
+             label: labels[labelIndex++ % labels.length],
+         });
+
+        var marker2= new google.maps.Marker({
+          position: {lat: 45.43412659327395, lng: 12.32698742411617},
+          map: map,
+          title: ' Ca Giustinian',
+          label: labels[labelIndex++ % labels.length],
+        });
+
+        var marker3= new google.maps.Marker({
+          position: {lat: 45.4337967, lng: 12.3500867},
+          map: map,
+          title:'Teatro Piccolo Arsenale',
+          label: labels[labelIndex++ % labels.length],
+        });
+
+        var marker4= new google.maps.Marker({
+          position: {lat: 45.4334667, lng: 12.3505046},
+          map: map,
+          title:'Arsenale',
+          label: labels[labelIndex++ % labels.length],
+        });
+
+
+        var marker5= new google.maps.Marker({
+          position: {lat: 45.4357087, lng: 12.3560396},
+          map: map,
+          title: 'Teatro alle Tese',
+          label: labels[labelIndex++ % labels.length],
+        });
+
+        var marker6= new google.maps.Marker({
+          position: {lat: 45.42853683121339, lng: 12.35789548715513},
+          map: map,
+          title: 'The Giardini',
+          label: labels[labelIndex++ % labels.length],
+        });
+
+
+        var marker7= new google.maps.Marker({
+          position: {lat: 45.405686, lng: 12.3680141},
+          map: map,
+          title:'Palazzo del Cinema',
+          label: labels[labelIndex++ % labels.length],
+        });
+
+
+
+marker1.addListener('click', function() {
+infowindow.open(map, marker1);
+var markerPanoID = data.location.pano;
+});
+
+marker2.addListener('click', function() {
+infowindow2.open(map, marker2);
+var markerPanoID = data.location.pano;
+});
+
+marker3.addListener('click', function() {
+infowindow3.open(map, marker3);
+var markerPanoID = data.location.pano;
+});
+
+marker4.addListener('click', function() {
+infowindow4.open(map, marker4);
+var markerPanoID = data.location.pano;
+});
+
+marker5.addListener('click', function() {
+infowindow5.open(map, marker5);
+var markerPanoID = data.location.pano;
+});
+
+marker6.addListener('click', function() {
+infowindow6.open(map, marker6);
+var markerPanoID = data.location.pano;
+});
+
+marker7.addListener('click', function() {
+infowindow7.open(map, marker7);
+var markerPanoID = data.location.pano;
+});
+
+        // Set the initial Street View camera to the center of the map
+        sv.getPanorama({location: berkeley, radius: 50}, processSVData);
+        sv.getPanorama({location: location2, radius: 50}, processSVData);
+        sv.getPanorama({location: location3, radius: 50}, processSVData);
+        sv.getPanorama({location: location4, radius: 50}, processSVData);
+        sv.getPanorama({location: location5, radius: 50}, processSVData);
+        sv.getPanorama({location: location6, radius: 50}, processSVData);
+        sv.getPanorama({location: location7, radius: 50}, processSVData);
+        sv.getPanorama({location: location8, radius: 50}, processSVData);
+
+
+        // Look for a nearby Street View panorama when the map is clicked.
+        // getPanoramaByLocation will return the nearest pano when the
+        // given radius is 50 meters or less.
+      //  map.addListener('click', function(event) {
+      //  sv.getPanorama({location: event.latLng, radius: 50}, processSVData);
+      //  });
+      }
+
+      function processSVData(data, status) {
+        if (status === google.maps.StreetViewStatus.OK) {
+          var marker = new google.maps.Marker({
+            position: data.location.latLng,
+            map: map,
+
+          });
+
+          panorama.setPano(data.location.pano);
+          panorama.setPov({
+            heading: 270,
+            pitch: 0
+          });
+          panorama.setVisible(true);
+
+          marker.addListener('click', function() {
+            var markerPanoID = data.location.pano;
+
+            // Set the Pano to use the passed panoID.
+            panorama.setPano(markerPanoID);
+            panorama.setPov({
+              heading: 270,
+              pitch: 0
+            });
+            panorama.setVisible(true);
+          });
+        } else {
+          console.error('Street View data not found for this location.');
+        }
+      }
+
+    </script>
+    <script async="" defer="" src="./mobile-index_files/js">
+    </script>
+  
+
+</body></html>

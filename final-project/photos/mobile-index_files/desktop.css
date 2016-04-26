@@ -1,0 +1,201 @@
+h1 {
+  font-size: 30pt;
+  font-family: 'Quicksand' sans-serif;
+}
+
+#frame {
+  height: 100%;
+  width:100%;
+  padding: 1% 5% 5% 5%;
+}
+
+#results {
+margin: 1% 1% 1% 1%;
+text-align: center;
+
+}
+.navbar-default {
+  color:black;
+  background-color:white;
+  border: none;
+  padding-top: 2%;
+}
+
+
+.navbar-brand {
+  font-size: 300%;
+  font-family: 'Quicksand' sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.mobile{
+  font-size: 80%;
+  font-family: 'Quicksand' sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+
+.navbar-fixed-bottom {
+padding: 0 0 0 0;
+margin: 0 0 0 0;
+}
+.front {
+  font-size: 400%;
+  font-family: 'Quicksand' sans-serif;
+  color: black;
+  font-weight: bold;
+  padding: 20% 20% 20% 20%;
+  text-align: center;
+
+}
+
+.front p {
+  font-size: 20pt;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+font-style: italic;
+  text-align: center;
+
+}
+
+.link {
+  text-align: right;
+  font-size: 50%;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  text-align: center;
+
+}
+#bs-example-navbar-collapse-1{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20pt;
+
+}
+
+.twitter-tweet {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12pt;
+}
+
+
+.where{
+  font-family: 'Quicksand', sans-serif;
+font-size: 12pt;
+}
+.screen-name{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12pt;
+  color: grey;
+}
+
+.name{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+}
+.image {
+  width: 240px;
+  height:auto;
+}
+
+.twitter {
+ height: 450px;
+ width: 500px;
+ align: center;
+ margin: 5% 20% 5% 30%;
+ border: none;
+ border-top: 5px;
+ border-color: red;
+
+}
+
+ a:hover {
+  color: red;
+  background-color: white;
+  text-decoration: none;
+}
+
+a:active {
+ color: red;
+ background-color: white;
+ text-decoration: none;
+}
+///////
+
+
+/* navbar */
+.navbar-default {
+    background-color:white;
+    border-color: none;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: black;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: black;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: red;
+
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: red;
+    background-color: white;
+
+
+
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: black;
+    background-color: lightgrey;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: none;
+    border-bottom-color: none;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: none;
+    border-bottom-color: none;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: none;
+    border-bottom-color: none;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: none;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: black;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: black;
+    }
+}
+//

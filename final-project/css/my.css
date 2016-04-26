@@ -1,0 +1,50 @@
+h1 {
+  font-size: 30pt;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+header {
+  font-size: 200%;
+  text-align: center;
+  background-color: black;
+  color: grey;
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+.row {
+  padding-right: -30px;
+  margin-right:-20px;
+}
+.orange {
+  color: orange;
+}
+.results {
+  height:185px;
+  width: 240px;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+  text-align:center;
+
+}
+
+#parent {
+    display:none;
+}
+#parent:hover #hover-content {
+    display:block;
+}
+
+.search {
+  height:185px;
+  width: 240px;
+  padding:0;
+  margin:0 -10px 0 0::
+  overflow:hidden;
+}

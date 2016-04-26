@@ -1,0 +1,22 @@
+<script type="text/javascript">
+    var html = ""
+    var apiurl = "http://content.guardianapis.com/search?q=venice%20biennale&api-key=81e44f06-4c94-4068-9c81-397fe8202f14"
+    $(document).ready(function(){
+            console.log("document ready")
+            $.getJSON(apiurl,function(json){
+                console.log(json);
+              //  $("#results").append('<p>"'+json.title+'"</p>');
+
+                $.each(json.items,function(i,data){
+                    html += '<p>' + '"webTitle"' + '</p>'
+                    });
+                console.log(html);
+                $("#results").append(html);
+            });
+
+
+    });
+
+</script>
+
+<div id="results"> </div>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> In Class Exercise </title>
+
+<script>
+var userName= "Emily";
+var d = new Date();
+</script>
+
+<body>
+<h1 id="headline"> headline </h1>
+<p id="date"> today's date</p>
+<p id="change"> text </p>
+<button type="button" onclick="addNewGraph ()"> and? </button>
+
+
+
+<script>
+document.getElementById("headline").innerHTML="Hello, " + userName;
+document.getElementById("date").innerHTML= d
+document.getElementById("change").innerHTML= userName + " likes cookies."
+
+function addNewGraph () {
+  document.getElementById("change").innerHTML = "and milk."
+}
+</script>
+
+</head>
+</body>
+
+</html>
